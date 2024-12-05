@@ -7,7 +7,7 @@ Objective of this tutorial is to help users to set up different tools to study t
 
 ## Structure
 
-For the Impatient, a [Quckstart] document 
+For the Impatient, a [QuckStart] document 
 
 This document is structured and one can follow sequentially starting with ``` Architecture ```:
 
