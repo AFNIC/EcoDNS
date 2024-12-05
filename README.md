@@ -18,10 +18,6 @@ This document is structured and one can follow sequentially starting with ``` Ar
 
 # 
 
-- bind9
-- grafana
-- Ecofloc
-- nethogs
 
 [Architecture]: https://github.com/afnic/EcoDNS/blob/master/Architecture.md
 [QuickStart]: https://github.com/afnic/EcoDNS/blob/master/QuickStart.md
