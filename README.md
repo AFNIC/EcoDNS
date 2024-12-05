@@ -12,7 +12,7 @@ For the Impatient, a [Quckstart] document
 This document is structured and one can follow sequentially starting with ``` Architecture ```:
 
  * [Architecture]
- * Requirement
+ * [Requirements]
  
  ``` At the end of each page, there will be a pointer section to guide you further ```
 
