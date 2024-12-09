@@ -16,14 +16,18 @@ Key aspects of the DNS traffic gneration include:
 
 
 
-## DNS Resolver:
+### DNS Resolver:
 
 Handles domain name resolution requests sent by the traffic generator
 
-## Energy Monitoring Module:
+### Energy Monitoring Module:
 
 Tracks the energy consumption of DNS operations, providing data for optimization.
 User Interface:
 
 Allows users to interact with the system, manage domain registrations, and view energy consumption metrics.
+
+### Port mirroring:
+
+### Grafana:
 
