@@ -35,6 +35,6 @@ Allows users to interact with the system, manage domain registrations, and view 
  * Next section to follow: [Prerequisites]
  * If you want to go back to the [Readme Page]
 
-[Prerequisites]: https://github.com/AFNIC/EcoDNS/edit/main/Prerequisites.md
-[Readme Page]: https://github.com/AFNIC/EcoDNS/edit/main/README.md
+[Prerequisites]: https://github.com/AFNIC/EcoDNS/blob/main/Prerequisites.md
+[Readme Page]: https://github.com/AFNIC/EcoDNS/blob/main/README.md
 
