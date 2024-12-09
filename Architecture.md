@@ -11,7 +11,7 @@ We plan to generate DNS traffic (i.e. the process of creating and sending DNS qu
 Key aspects of the DNS traffic gneration include:
 - **Query Patterns**: Generating specific types of DNS queries (e.g., `A`, `AAAA`, `MX`, or `TXT` records) to simulate real-world traffic or test specific scenarios.
 - **Traffic Volume**: Adjusting the rate of query generation to simulate low, medium, or high loads on DNS servers.
-- **Tools**: We plan to use the shell scripts in the `Src` directory to generate different DNS traffic types. We could also use tools like [`dnsperf`](https://github.com/DNS-OARC/dnsmeter/tree/master), [`queryperf`](https://github.com/romuald/queryperf), `dnsmeter`(https://github.com/DNS-OARC/dnsmeter/tree/master), `dnsgen`(https://github.com/DNS-OARC/dnsmeter/tree/master)  to generate DNS traffic.
+- **Tools**: We plan to use the shell scripts in the `Src` directory to generate different DNS traffic types. We could also use tools like [`dnsperf`](https://github.com/DNS-OARC/dnsmeter/tree/master), [`queryperf`](https://github.com/romuald/queryperf), [`dnsmeter`](https://github.com/DNS-OARC/dnsmeter/tree/master), [`dnsgen`](https://github.com/DNS-OARC/dnsmeter/tree/master)  to generate DNS traffic.
 - **Applications**: To calculate the energy consumption based on different levels of DNS traffic generated.
 
 
