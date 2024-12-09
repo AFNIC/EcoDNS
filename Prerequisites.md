@@ -22,7 +22,7 @@ https://hubblo-org.github.io/scaphandre-documentation/tutorials/getting_started.
 
 
 
- * [BIND9 installation]: #bind9-installation
- * [Scaphandre installation]: #scaphandre-installation
- * [Ecofloc installation]: #ecofloc-installation
- * [Nethogs installation]: #nethogs-installation
+[BIND9 installation]: #bind9-installation
+[Scaphandre installation]: #scaphandre-installation
+[Ecofloc installation]: #ecofloc-installation
+[Nethogs installation]: #nethogs-installation
