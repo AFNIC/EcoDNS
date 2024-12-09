@@ -31,3 +31,10 @@ Allows users to interact with the system, manage domain registrations, and view 
 
 ### Grafana:
 
+## Pointer Section 
+ * Next section to follow: [Prerequisites]
+ * If you want to go back to the [Readme Page]
+
+[Prerequisited]: https://github.com/AFNIC/EcoDNS/edit/main/Prerequisited.md
+[Readme Page]: https://github.com/AFNIC/EcoDNS/edit/main/Architecture.md
+
