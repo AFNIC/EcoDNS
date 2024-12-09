@@ -1,4 +1,4 @@
-# Tools to study the DNS Energy consumption
+# DNS Energy consumption
 
 This document describes the architecture, prerequisites, installation, post-install sanity checking for setting up the tools to study the **"DNS energy consumption"**. 
 
