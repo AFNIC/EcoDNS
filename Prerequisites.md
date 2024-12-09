@@ -21,6 +21,8 @@ https://www.wonderingchimp.com/demoing-scaphandre/
 ### Nethogs installation
 Why Nethogs?
 
+### Command to get the power consumption in Linux Ubuntu machine
+cat /sys/class/power_supply/BAT0/current_now /sys/class/power_supply/BAT0/voltage_now | xargs | awk '{print $1*$2/1e12 " W"}'
 
 
 [BIND9 installation]: #bind9-installation
