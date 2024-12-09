@@ -19,8 +19,8 @@ This document is structured and one can follow sequentially starting with ``` Ar
 # 
 
 
-[Architecture]: https://github.com/AFNIC/EcoDNS/blob/main/Architecture
-[QuickStart]: https://github.com//AFNIC/EcoDNS/blob/main/QuickStart
-[Requirements]: https://github.com/AFNIC/EcoDNS/blob/main/Requirements
+[Architecture]: https://github.com/AFNIC/EcoDNS/blob/main/Architecture.md
+[QuickStart]: https://github.com//AFNIC/EcoDNS/blob/main/QuickStart.md
+[Requirements]: https://github.com/AFNIC/EcoDNS/blob/main/Requirements.md
 
 
