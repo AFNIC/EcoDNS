@@ -1,5 +1,5 @@
 To have the infrastructure as mentioned in the [Architecture](https://github.com/AFNIC/EcoDNS/edit/main/Prerequisites.md), we need to have the following softwares installed: 
- * Bind9 installation
+ * [BIND9 installation]
  * scaphandre
  * Ecofloc
  * nethogs
@@ -17,6 +17,6 @@ https://hubblo-org.github.io/scaphandre-documentation/tutorials/getting_started.
 
 
 
- * [Why do we need the DNS Infrastructure?]
+
 
  * [BIND9 installation]: # BIND9 installation
