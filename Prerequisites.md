@@ -13,6 +13,7 @@ https://www.emmanuelgautier.com/blog/install-and-configure-dns-server-with-bind9
 [Scaphandre](https://github.com/hubblo-org/scaphandre) is a tool that makes it possible to measure the power being used by a single process on a computer/server.
 
 https://hubblo-org.github.io/scaphandre-documentation/tutorials/getting_started.html
+https://www.wonderingchimp.com/demoing-scaphandre/
 
 ### Ecofloc installation
 
