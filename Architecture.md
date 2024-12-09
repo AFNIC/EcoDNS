@@ -5,7 +5,16 @@
   <img width="800" height="350" src="https://github.com/AFNIC/EcoDNS/blob/main/Images/InfraDNS.png">
 </p>
 
-## Traffic generator
+### DNS traffic generation
+We plan to generate DNS traffic (i.e. the process of creating and sending DNS queries) to stress test the DNS authoritative servers and resolvers.
+
+Key aspects of the DNS traffic gneration include:
+- **Query Patterns**: Generating specific types of DNS queries (e.g., `A`, `AAAA`, `MX`, or `TXT` records) to simulate real-world traffic or test specific scenarios.
+- **Traffic Volume**: Adjusting the rate of query generation to simulate low, medium, or high loads on DNS servers.
+- **Tools**: We plan to use the shell scripts in the `Src` directory to generate different DNS traffic types. We could also use tools like [`dnsperf`](https://github.com/DNS-OARC/dnsmeter/tree/master), `queryperf`,  to generate DNS traffic.
+- **Applications**: To calculate the energy consumption based on different levels of DNS traffic generated.
+
+
 
 ## DNS Resolver:
 
