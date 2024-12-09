@@ -5,7 +5,7 @@
   <img width="800" height="350" src="https://github.com/AFNIC/EcoDNS/blob/main/Images/InfraDNS.png">
 </p>
 
-### DNS traffic generation
+### DNS traffic generation:
 We plan to generate DNS traffic (i.e. the process of creating and sending DNS queries) to stress test the DNS authoritative servers and resolvers.
 
 Key aspects of the DNS traffic gneration include:
