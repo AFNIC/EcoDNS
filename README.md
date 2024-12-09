@@ -12,7 +12,7 @@ For the Impatient, a [QuickStart] document
 This document is structured and one can follow sequentially starting with ``` Architecture ```:
 
  * [Architecture]
- * [Requirements]
+ * [Prerequisites]
  
  ``` At the end of each page, there will be a pointer section to guide you further ```
 
@@ -21,6 +21,6 @@ This document is structured and one can follow sequentially starting with ``` Ar
 
 [Architecture]: https://github.com/AFNIC/EcoDNS/blob/main/Architecture.md
 [QuickStart]: https://github.com//AFNIC/EcoDNS/blob/main/QuickStart.md
-[Requirements]: https://github.com/AFNIC/EcoDNS/blob/main/Requirements.md
+[Requirements]: https://github.com/AFNIC/EcoDNS/blob/main/Prerequisites.md
 
 
