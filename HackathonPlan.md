@@ -26,5 +26,6 @@
 A Ubuntu Laptop running BIND9 handles the domain name resolution requests sent by the traffic generator. It is connected with a [Wattmeter](https://www.yoctopuce.com/EN/products/capteurs-electriques-usb/yocto-watt), which will give the watts consumed by the laptop.
 
 ##### DNS traffic generation
-
+We plan to use the shell scripts in the [`Src`](Src/) directory to generate different DNS traffic types.
+* [To generate UDP traffic](Src/) 
 
