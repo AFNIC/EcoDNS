@@ -31,6 +31,10 @@ We plan to use the shell scripts in the [`Src`](Src/) directory to generate diff
 * [To generate DoH traffic](Src/request_doh.sh)  - We have to check whether the source code does what it intends to do?
 * [To generate DoT traffic](Src/request_dot.sh)  - We have to check whether the source code does what it intends to do?
 
+##### Data Synchronisation
+
+To have statistics of the logs, we plan to synchronise the Data being received by the laptop running the DNS resolver `labs@192.168.14.2` to the server running the data analytics `ubuntu@91.134.96.246`
+
 ##### Data viewing and analytics
 
 The server which is used for Data Analytics ssh ubuntu@91.134.96.246
