@@ -33,7 +33,9 @@ We plan to use the shell scripts in the [`Src`](Src/) directory to generate diff
 
 ##### Data Synchronisation
 
-To have statistics of the logs, we plan to synchronise the Data being received by the laptop running the DNS resolver `labs@192.168.14.2` to the server running the data analytics `ubuntu@91.134.96.246`
+To have statistics of the logs, we plan to synchronise the Data being received by the laptop running the DNS resolver `labs@192.168.14.2` (server1) to the server running the data analytics `ubuntu@91.134.96.246` (server2)
+
+There is a synchronisation done between server1 and server2
 
 ##### Data viewing and analytics
 
