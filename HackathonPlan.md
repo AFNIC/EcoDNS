@@ -19,3 +19,6 @@
 </p>
 
 ## Steps 
+### Setup the Infrastructure for measurements
+
+##### DNS Resolution infrastructure
