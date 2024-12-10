@@ -15,7 +15,7 @@
 ## Team  
 
 <p align="center">
-  <img width="500" height="350" src="https://github.com/AFNIC/EcoDNS/blob/main/Images/HackathonTeam.jpeg">
+  <img width="450" height="350" src="https://github.com/AFNIC/EcoDNS/blob/main/Images/HackathonTeam.jpeg">
 </p>
 
 ## Steps 
