@@ -28,5 +28,6 @@ A Ubuntu Laptop running BIND9 handles the domain name resolution requests sent b
 ##### DNS traffic generation
 We plan to use the shell scripts in the [`Src`](Src/) directory to generate different DNS traffic types.
 * [To generate UDP traffic](Src/request2.sh)  - We have to check whether the source code does what it intends to do?
-* [To generate UDP traffic](Src/request2.sh)  - We have to check whether the source code does what it intends to do?
+* [To generate UDP traffic](Src/request_doh.sh)  - We have to check whether the source code does what it intends to do?
+* [To generate UDP traffic](Src/request_dot.sh)  - We have to check whether the source code does what it intends to do?
 
