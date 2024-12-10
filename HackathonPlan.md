@@ -33,4 +33,6 @@ We plan to use the shell scripts in the [`Src`](Src/) directory to generate diff
 
 ##### Data viewing and analytics
 
-ssh ubuntu@91.134.96.246
+The server which is used for Data Analytics ssh ubuntu@91.134.96.246
+Grafana is up and running: http://91.134.96.246:3000/ (Ask me the password ;-)
+
