@@ -37,6 +37,8 @@ To have statistics of the logs, we plan to synchronise the Data being received b
 
 ##### Data viewing and analytics
 
-The server which is used for Data Analytics ssh ubuntu@91.134.96.246
+The server which is used for Data Analytics (server-2-vps): `ssh ubuntu@91.134.96.246`
 Grafana is up and running: http://91.134.96.246:3000/ (Ask me the password ;-)
 
+The server which runs DNS resolver (server-1-dns-resolver): `ssh labs@192.168.14.2`
+Connect to server-1-dns-resolver from server-2-vps: `ssh labs@10.0.0.2`
