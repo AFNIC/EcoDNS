@@ -41,6 +41,9 @@ There is a synchronisation done between server1 and server2
 
 The server which is used for Data Analytics (server-2-vps): `ssh ubuntu@91.134.96.246`
 
+## Results
+
+
 Grafana is up and running: http://91.134.96.246:3000/ (Ask me the password ;-)
 
 The server which runs DNS resolver (server-1-dns-resolver): `ssh labs@192.168.14.2`
