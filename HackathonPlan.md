@@ -11,3 +11,5 @@
     * Compare the software & hardware measurements for the above scenario 
   * Measure the energy consumption for the baseline scenarion with respect to HW (e.g. CPU, GPU, Network Interface)
 * Repeat the measurements made in baseline with DoT, DoH
+
+## Steps 
