@@ -43,6 +43,41 @@ screen -l
 ssh labs@10.0.0.2 "sudo nethogs -t" | sudo tee /var/log/nethogs-server-1.log > /dev/null
 ```
 
+Download and extract golang.
+```
+curl -OL https://go.dev/dl/go1.23.4.linux-amd64.tar.gz && tar xf go1.23.4.linux-amd64.tar.gz
+```
+
+Clone and compile nethogs-parser:
+```
+git clone https://github.com/boopathi/nethogs-parser && cd nethogs-parser && ~/go/bin/go build -o hogs hogs.go
+```
+
+`nethogs-parser.sh`
+```
+#!/bin/bash
+
+# Command to execute
+CMD="sudo ./hogs -type=csv /var/log/nethogs-server-1.log"
+# Output log file
+LOG_FILE="/var/log/nethogs-parser-server-1.log"
+
+# Infinite loop
+while true; do
+        # Run the command, pipe the output to tee to write to the log file
+        $CMD | sudo tee "$LOG_FILE" > /dev/null
+        # Wait for 1 second
+        sleep 1
+done
+```
+
+Create the `nethogs-parser.sh` file and run it in the background:
+```
+nano nethogs-parser.sh && chmod +x nethogs_parser.sh && ./nethogs_parser.sh &
+```
+
+The parsed log in csv format will be updated every second and available at `/var/log/nethogs-parser-server-1.log`.
+
 ##### Data viewing and analytics
 
 The server which is used for Data Analytics (server-2-vps): `ssh ubuntu@91.134.96.246`
