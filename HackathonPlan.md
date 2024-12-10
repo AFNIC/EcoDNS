@@ -37,7 +37,11 @@ To have statistics of the logs, we plan to synchronise the Data being received b
 
 There is a synchronisation done between server1 and server2
 
-Arınç: Run as root on server-2-vps: `ssh labs@10.0.0.2 "sudo nethogs -t" > /var/log/nethogs-server-1.log &`
+Arınç: Run on server-2-vps:
+```
+screen -l
+ssh labs@10.0.0.2 "sudo nethogs -t" | sudo tee /var/log/nethogs-server-1.log > /dev/null
+```
 
 ##### Data viewing and analytics
 
