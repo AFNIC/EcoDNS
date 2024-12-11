@@ -88,7 +88,7 @@ server-1: 10.0.0.2:5000 csv-prometheus-exporter
 
 Setting up csv-prometheus-export (https://github.com/stohrendorf/csv-prometheus-exporter):
 
-`/etc/scrapeconfig.yml`, this configuration example was taken from the repository but some of the parameters on this configuration is not there anymore. Debug with `docker logs <container>`.
+`/etc/scrapeconfig.yml`, this configuration example was taken from the repository but some of the parameters on this configuration is not there anymore. Debug with `docker logs <container>` to fix the configuration.
 ```
 global:
   prefix: weblog # prefix:metric_name{labels...}
