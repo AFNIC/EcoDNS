@@ -78,6 +78,13 @@ nano nethogs-parser.sh && chmod +x nethogs_parser.sh && ./nethogs_parser.sh &
 
 The parsed log in csv format will be updated every second and available at `/var/log/nethogs-parser-server-1.log`.
 
+What runs what:
+
+server-2: 10.0.0.1:3000 grafana
+server-1: 10.0.0.2:9090 prometheus
+server-1: 10.0.0.2:8080 scaphandre-prometheus-exporter
+server-1: 10.0.0.2:5000 csv-prometheus-exporter
+
 ##### Data viewing and analytics
 
 The server which is used for Data Analytics (server-2-vps): `ssh ubuntu@91.134.96.246`
