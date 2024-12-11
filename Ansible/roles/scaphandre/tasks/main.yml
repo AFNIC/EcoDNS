@@ -1,0 +1,19 @@
+---
+# tasks file for roles/scaphandre
+#- name: export modprobe
+#  shell: "modprobe intel_rapl_common"
+
+- name: Download scaphandre
+  get_url:
+    url: "https://github.com/barnumbirr/scaphandre-debian/releases/download/v1.0.0-1/scaphandre_1.0.0-1_amd64_bookworm.deb"
+    dest: "/root/"
+
+- name: Install scaphandre package
+  apt:
+    deb: "/root/scaphandre_1.0.0-1_amd64_bookworm.deb"
+    state: present
+
+#- name: run scaphandre and send to prometheus
+#  shell: "scaphandre prometheus"
+#  async: 0
+#  poll: 0

@@ -1,0 +1,12 @@
+---
+# tasks file for roles/bind9
+- name: Install bind9
+  apt:
+    name: bind9
+    state: present
+
+- name: Start bind9
+  service:
+    name: named
+    state: started
+    enabled: true

@@ -1,0 +1,12 @@
+---
+# tasks file for roles/wattmeter
+- name: gpg key
+  shell: "wget -q -O - https://www.yoctopuce.com/apt/KEY.gpg | gpg --dearmor  | tee -a /usr/share/keyrings/yoctopuce.gpg > /dev/null"
+
+- name: repository
+  shell:  "echo 'deb [signed-by=/usr/share/keyrings/yoctopuce.gpg] https://www.yoctopuce.com/ apt/stable/' | tee -a /etc/apt/sources.list.d/yoctopuce.list  > /dev/null"
+
+- name: Install virtualhub
+  apt:
+    name: virtualhub
+    state: present

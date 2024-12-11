@@ -1,0 +1,18 @@
+- name: setup resolver server
+  hosts: resolver
+  roles:
+    - git
+    - curl
+    - bind9
+    - ecofloc
+    - nethogs
+    - scaphandre
+
+- name: setup analyzer
+  hosts: analyzer
+  roles:
+    - git
+    - curl
+    - prometheus
+    - grafana
+    - wattmeter

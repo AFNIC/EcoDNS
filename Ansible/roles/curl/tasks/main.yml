@@ -1,0 +1,6 @@
+---
+# tasks file for curl
+- name: Install curl
+  apt:
+    name: curl
+    state: present

@@ -1,0 +1,35 @@
+---
+# tasks file for roles/nethogs
+- name: Install nethogs
+  apt:
+    name: nethogs
+    state: present
+
+- name: Install golang 
+  shell: "curl -OL https://go.dev/dl/go1.23.4.linux-amd64.tar.gz && tar xf go1.23.4.linux-amd64.tar.gz"
+
+- name: Install nethogs parser
+  git:
+    repo: https://github.com/boopathi/nethogs-parser
+    dest: /root/nethogs-parser
+    update: yes
+
+- name: Build nethogs-parser
+  shell: "~/go/bin/go build -o hogs /root/nethogs-parser/hogs.go"
+
+- name: Copy nethogs-parser.sh
+  copy:
+    src: "roles/nethogs/files/nethogs-parser.sh"
+    dest: "/root/nethogs-parser.sh"
+    mode: '0755'  # Set the file to be executable during copy
+
+- name: run nethogs
+  shell: "nethogs -t | tee /var/log/nethogs-server-1.log > /dev/null &"
+  async: 0
+  poll: 0
+
+- name: Run nethogs-parser.sh
+  shell: "/root/nethogs-parser.sh &"
+  async: 0
+  poll: 0
+
