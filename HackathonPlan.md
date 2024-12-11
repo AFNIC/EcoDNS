@@ -86,6 +86,8 @@ server-1: 10.0.0.2:8080 scaphandre-prometheus-exporter
 server-1: 10.0.0.2:5000 csv-prometheus-exporter
 ```
 
+https://github.com/stohrendorf/csv-prometheus-exporter
+
 ##### Data viewing and analytics
 
 The server which is used for Data Analytics (server-2-vps): `ssh ubuntu@91.134.96.246`
