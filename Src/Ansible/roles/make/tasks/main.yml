@@ -1,0 +1,6 @@
+---
+# tasks file for make
+- name: Install make
+  apt:
+    name: make
+    state: present

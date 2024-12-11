@@ -1,1 +1,3 @@
-{}
+{
+    "ansible.python.interpreterPath": "/home/fauconk/miniconda3/envs/ansible/bin/python"
+}

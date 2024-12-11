@@ -1,7 +1,0 @@
----
-# tasks file for roles/ecofloc
-- name: Install ecofloc
-  git:
-    repo: https://github.com/renout-nicolas/ecofloc_ripe.git
-    dest: /root/ecofloc
-    update: yes

@@ -1,0 +1,32 @@
+---
+# tasks file for roles/prometheus
+- name: Add Prometheus repository
+  apt_repository:
+    repo: "deb https://packagecloud.io/prometheus-community/prometheus/ubuntu/ {{ ansible_distribution_release }} main"
+    state: present
+
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install Prometheus
+  apt:
+    name: prometheus
+    state: present
+
+- name: Install Prometheus Node Exporter
+  apt:
+    name: prometheus-node-exporter
+    state: present
+
+- name: Ensure Prometheus is started and enabled
+  systemd:
+    name: prometheus
+    state: started
+    enabled: yes
+
+- name: Ensure Prometheus Node Exporter is started and enabled
+  systemd:
+    name: prometheus-node-exporter
+    state: started
+    enabled: yes

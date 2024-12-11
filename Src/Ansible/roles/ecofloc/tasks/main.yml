@@ -1,0 +1,27 @@
+---
+# tasks file for roles/ecofloc
+- name: clone ecofloc
+  git:
+    repo: https://github.com/renout-nicolas/ecofloc_ripe.git
+    dest: /root/ecofloc
+    update: yes
+
+- name: install msr-tools
+  apt:
+    name: msr-tools
+    state: present
+
+- name: Install perf
+  apt:
+    name: linux-tools-common,linux-tools-generic
+    state: present
+
+- name: Install build-essential
+  apt:
+    name: build-essential
+    state: present
+
+- name: install ecofloc
+  shell: "yes | /root/ecofloc/ecofloc_installer.sh"
+  args:
+    executable: /bin/bash

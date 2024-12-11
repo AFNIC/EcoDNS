@@ -1,0 +1,6 @@
+---
+# tasks file for gnupg
+- name: Install gnupg
+  apt:
+    name: gnupg
+    state: present

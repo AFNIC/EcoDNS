@@ -1,0 +1,6 @@
+---
+# tasks file for venv
+- name: install venv
+  apt:
+    name: python3.12-venv
+    state: present
