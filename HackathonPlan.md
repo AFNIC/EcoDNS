@@ -86,7 +86,39 @@ server-1: 10.0.0.2:8080 scaphandre-prometheus-exporter
 server-1: 10.0.0.2:5000 csv-prometheus-exporter
 ```
 
-https://github.com/stohrendorf/csv-prometheus-exporter
+Setting up csv-prometheus-export (https://github.com/stohrendorf/csv-prometheus-exporter):
+
+`/etc/scrapeconfig.yml`, this configuration example was taken from the repository but some of the parameters on this configuration is not there anymore. Debug with `docker logs <container>`.
+```
+global:
+  prefix: weblog # prefix:metric_name{labels...}
+  format: # based on "%h %l %u %t \"%r\" %>s %b"
+  - remote_host: label
+  - ~ # ignore remote logname; unnamed ignored column
+  - remote_user: label
+  - timestamp: ~ # ignore timestamp; named ignored column
+  - request_header: request_header # special parser that emits the labels "request_http_version", "request_uri" and "request_method"
+  - status: label
+  - body_bytes_sent: clf_number  # maps a single dash to zero, otherwise behaves like "number"
+
+ssh:
+  connection:
+    user: labs
+    pkey: /home/labs/.ssh/id_ed25519
+    file: /var/log/nethogs-parser-server-1.log
+    connect-timeout: 5  # seconds between connection attempts to hosts
+  environments:
+    home:
+      hosts:
+      - 127.0.0.1
+
+```
+
+Install and run the programme as a docker container. The run command may need the SSH private key to be allowed as well.
+```
+sudo docker pull stohrendorf/csv-prometheus-exporter
+sudo docker run -d -p 5000:5000 -v /etc/scrapeconfig.yml:/etc/scrapeconfig.yml stohrendorf/csv-prometheus-exporter
+```
 
 ##### Data viewing and analytics
 
