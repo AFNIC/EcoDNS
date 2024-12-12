@@ -13,7 +13,7 @@
 * Repeat the measurements made in baseline with DoT, DoH
 
 ## Results
-[Hackathon Results](https://github.com/AFNIC/EcoDNS/blob/main/Eco%20DNS.pdf)
+[Hackathon Results](https://github.com/AFNIC/EcoDNS/blob/main/Hackathon.pdf)
 
 ## Team  
 
